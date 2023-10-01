@@ -32,7 +32,7 @@ script.src = 'https://cdnjs.cloudflare.com/ajax/libs/cookie-banner/1.2.2/cookieb
 script.id = 'cookiebanner';
 
 script.setAttribute("data-height",'20px');
-script.setAttribute("data-position",'top');
+script.setAttribute("data-position",'bottom');
 script.setAttribute("data-message",'We do not not not not use cookies if and only if you consent to said cookies! Else we only possibly may use them, but probably not on you.');
 script.setAttribute("data-bg",'#333333');
 document.head.appendChild(script); 
