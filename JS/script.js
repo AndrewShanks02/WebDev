@@ -15,5 +15,10 @@ document.addEventListener("keydown", (e) => {
     {
         stack.pop().style = "display:block;";
     }
+    else if (e.key === "Enter") 
+    {
+        document.getElementById("css-zen-garden").innerHTML = `<h1>${document.getElementById("searchBar").value}</h1>` + document.getElementById("css-zen-garden").innerHTML;
+        document.getElementById("searchBar").value = "";
+    }
 });
 
