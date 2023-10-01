@@ -9,3 +9,11 @@ for (let i of paragraphs)
         stack.push(i);
     });
 }
+
+document.addEventListener("keydown", (e) => {
+    if (e.key === "z" && stack.length != 0)
+    {
+        stack.pop().style = "display:block;";
+    }
+});
+
