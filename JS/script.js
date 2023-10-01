@@ -2,7 +2,10 @@
 var script = document.createElement('script');
 
 let stack = [];
+let switchPair = [];
 let paragraphs = document.getElementsByTagName("p");
+
+let headings = document.getElementsByTagName("h3");
 
 for (let i of paragraphs) 
 {
@@ -10,6 +13,32 @@ for (let i of paragraphs)
     {
         i.style = "display: none";
         stack.push(i);
+    });
+}
+
+for (let i of headings) 
+{
+    i.addEventListener("click", () =>
+    {
+        if (i.className == "highlight")
+        {
+            i.className = "";
+            switchPair.pop();
+        }
+        else
+        {
+            i.className = "highlight";
+            switchPair.push(i);
+        }
+        if (switchPair.length == 2)
+        {
+            let temp = switchPair[0].innerHTML;
+            switchPair[0].innerHTML = switchPair[1].innerHTML;
+            switchPair[1].innerHTML = temp;
+            switchPair[0].className = "";
+            switchPair[1].className = "";
+            switchPair = [];
+        }
     });
 }
 

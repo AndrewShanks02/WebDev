@@ -63,6 +63,13 @@ abbr {
 	width: 100%;
 	}
 
+.highlight{
+	display: inline-block;
+	padding: .25em 0;
+	background: #079cff;
+	color: #ffffff;
+}
+
 header h1 { 
 	background: transparent url(http://csszengarden.com/001/h1.gif) no-repeat top left;
 	margin-top: 10px;
