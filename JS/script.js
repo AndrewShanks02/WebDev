@@ -54,6 +54,17 @@ document.addEventListener("keydown", (e) => {
     }
 });
 
+document.getElementById("image1").addEventListener("mouseover", (i) =>
+{
+    i.target.src = "../Assets/cr2Neg.gif";
+});
+document.getElementById("image1").addEventListener("mouseout", (i) =>
+{
+    i.target.src = "http://csszengarden.com/001/cr2.gif";
+});
+
+
+
 
 
 script.type = 'text/javascript';

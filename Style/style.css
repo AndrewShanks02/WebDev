@@ -17,7 +17,7 @@ body {
 	font: 75% georgia, sans-serif;
 	line-height: 1.88889;
 	color: #555753; 
-	background: #fff url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; 
+	background-color: white; 
 	margin: 0; 
 	padding: 0;
 	}
@@ -192,7 +192,7 @@ footer a:link, footer a:visited {
 
 
 .extra1 {
-	background: transparent url(http://csszengarden.com/001/cr2.gif) top left no-repeat; 
+	background: transparent; /* url(http://csszengarden.com/001/cr2.gif) top left no-repeat; */
 	position: absolute; 
 	top: 40px; 
 	right: 0; 
