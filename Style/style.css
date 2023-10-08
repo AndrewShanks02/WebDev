@@ -39,11 +39,11 @@ a:link {
 a:visited { 
 	font-weight: bold; 
 	text-decoration: none; 
-	color: #D4CDDC;
+	color: #00ff00;
 	}
 a:hover, a:focus, a:active { 
 	text-decoration: underline; 
-	color: #9685BA;
+	color: #00af00;
 	}
 abbr {
 	border-bottom: none;
