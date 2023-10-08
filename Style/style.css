@@ -25,6 +25,14 @@ p {
 	margin-top: 0; 
 	text-align: justify;
 	}
+#zen-summary
+{
+	color: #b9beb4;
+}
+#zen-summary a
+{
+	color: #ff8e8e;
+}
 h3 { 
 	font: italic normal 1.4em georgia, sans-serif;
 	letter-spacing: 1px; 
