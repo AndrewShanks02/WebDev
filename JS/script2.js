@@ -51,6 +51,11 @@ function parseInput(s)
             case '#':
                 readLit = true;
                 break;
+            case '+':
+                let x = stack.pop();
+                let y = stack.pop();
+                stack.push(x+y);
+                break;
             case ';':
                 if (readLit)
                 {
