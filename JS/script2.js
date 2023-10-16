@@ -1,6 +1,15 @@
+let stack = [];
+let readLit = false;
+let currentLit = "";
+//let operation;
+
 function output(s)
 {
-    $("#outputField").text(s);
+    $("#outputField").text($("#outputField").val() + s);
+}
+function reset()
+{
+    $("#outputField").text("");
 }
 function fetchInput()
 {
@@ -15,7 +24,49 @@ function binToInt(s)
     }
     return n;
 }
+function parseInput(s)
+{
+    reset()
+    for (let i = 0; i < s.length; i++)
+    {
+        if (readLit && s[i] != ';')
+        {
+            if (s[i] == '1' || s[i] == '0')
+            {
+
+                currentLit += s[i];
+            }
+            else
+            {
+                output("Illegal Literal\n");
+                return;
+            }
+        }
+
+        switch (s[i])
+        {
+            case '>':
+                readLit = true;
+                break;
+            case '#':
+                readLit = true;
+                break;
+            case ';':
+                if (readLit)
+                {
+                    readLit = false;
+                    console.log(currentLit);
+                    stack.push(binToInt(currentLit));
+                    currentLit = "";
+                }
+                break;
+            case '<':
+                output(stack.pop());
+                break;
+        }
+    }
+}
 
 $("#btn").click((e) => {
-    output(castBinToInt(fetchInput()));
+    parseInput(fetchInput());
 });
