@@ -26,14 +26,13 @@ function binToInt(s)
 }
 function parseInput(s)
 {
-    reset()
+    reset();
     for (let i = 0; i < s.length; i++)
     {
         if (readLit && s[i] != ';')
         {
             if (s[i] == '1' || s[i] == '0')
             {
-
                 currentLit += s[i];
             }
             else
