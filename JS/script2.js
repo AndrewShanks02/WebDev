@@ -60,9 +60,6 @@ function parseInput(s)
                 readLit = true;
                 operation = (f) => {return f;}
                 break;
-            case '#':
-                readLit = true;
-                break;
             case '+':
                 x = stack.pop();
                 y = stack.pop();

@@ -10,12 +10,29 @@
 <body>
     <h2>A Really Stupid Calculator</h2>
     <p>A calculator too high effort too ever be useful</p>
-    
+    <p>You must push binary literals to the stack and use operators on them</p>
+    <div id="container">
+        <div id="tableOfCommands">
+            <table style="width:15%; float:center;">
+                <tr> <th> Command </th> <th> Function</th> </tr>
+                <tr> <td> > </td> <td> Push literal to stack </td> </tr>
+                <tr> <td> ; </td> <td> End literal </td> </tr>
+                <tr> <td> < </td> <td> Pop from stack </td> </tr>
+                <tr> <td> + </td> <td> Add top two items on stack </td> </tr>
+                <tr> <td> - </td> <td> Subtract top two items on stack </td> </tr>
+                <tr> <td> * </td> <td> Multiply top two items on stack </td> </tr>
+                <tr> <td> / </td> <td> Divide top two items on stack </td> </tr>
+                <tr> <td> % </td> <td> Perform modulo on the top item of the stack and following literal</td> </tr>
+            </table>
+        </div>
 
-    <textarea id="inputField" style="width:300px; height:150px; resize: none;"></textarea>
-    <br><br><button id="btn">Run</button>
-    <button id="clearbtn">Clear</button>
-    <br><br><textarea id="outputField" readonly="true" style="width:300px; height:150px; resize: none;"></textarea>
+        <div id="inputOutput">
+            <textarea id="inputField" style="width:300px; height:150px; resize: none;"></textarea>
+            <br><br><button id="btn">Run</button>
+            <button id="clearbtn">Clear</button>
+            <br><br><textarea id="outputField" readonly="true" style="width:300px; height:150px; resize: none;"></textarea>
+        </div>
+    </div>
     
     <script type="text/javascript" src="../JS/script2.js"></script>
 </body>
