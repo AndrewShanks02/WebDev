@@ -1,7 +1,7 @@
 let stack = [];
 let readLit = false;
 let currentLit = "";
-//let operation;
+let operation;
 
 function output(s)
 {
@@ -43,25 +43,45 @@ function parseInput(s)
             }
         }
 
+        let x, y;
         switch (s[i])
         {
             case '>':
                 readLit = true;
+                operation = (f) => {return f;}
                 break;
             case '#':
                 readLit = true;
                 break;
             case '+':
-                let x = stack.pop();
-                let y = stack.pop();
+                x = stack.pop();
+                y = stack.pop();
                 stack.push(x+y);
+                break;
+            case '-':
+                x = stack.pop();
+                y = stack.pop();
+                stack.push(y-x);
+                break;
+            case '*':
+                x = stack.pop();
+                y = stack.pop();
+                stack.push(x*y);
+                break;
+            case '/':
+                x = stack.pop();
+                y = stack.pop();
+                stack.push(y/x);
+                break;
+            case '%':
+                readLit = true;
+                operation = (f) => {return stack.pop() % f;}
                 break;
             case ';':
                 if (readLit)
                 {
                     readLit = false;
-                    console.log(currentLit);
-                    stack.push(binToInt(currentLit));
+                    stack.push(operation(binToInt(currentLit)));
                     currentLit = "";
                 }
                 break;
