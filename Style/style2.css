@@ -1,6 +1,21 @@
+body {
+    background-color: beige;
+    text-align: center;
+}
 h2 {
-    color: rgb(45, 83, 255)
+    color: rgb(255, 0, 0);
 }
 p {
-    font-family:'Trebuchet MS'
+    font-family:'Trebuchet MS';
+}
+button {
+    border-radius: 25px;
+    border: 0px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    width:5%;
+}
+
+table, th, td {
+    border: 1px solid black;
 }

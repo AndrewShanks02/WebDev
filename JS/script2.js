@@ -3,6 +3,16 @@ let readLit = false;
 let currentLit = "";
 let operation;
 
+function clear()
+{
+    
+}
+
+document.getElementById("clearbtn").addEventListener("click", (e) => {
+    $("#inputField").val("")
+    $("#outputField").text("");
+});
+
 function output(s)
 {
     $("#outputField").text($("#outputField").val() + s);
