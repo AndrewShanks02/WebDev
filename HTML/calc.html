@@ -12,8 +12,8 @@
     <p>A calculator too high effort too ever be useful</p>
     <p>You must push binary literals to the stack and use operators on them</p>
     <div id="container">
-        <div id="tableOfCommands">
-            <table style="width:15%; float:center;">
+        <div>
+            <table>
                 <tr> <th> Command </th> <th> Function</th> </tr>
                 <tr> <td> > </td> <td> Push literal to stack </td> </tr>
                 <tr> <td> ; </td> <td> End literal </td> </tr>
@@ -26,11 +26,11 @@
             </table>
         </div>
 
-        <div id="inputOutput">
-            <textarea id="inputField" style="width:300px; height:150px; resize: none;"></textarea>
-            <br><br><button id="btn">Run</button>
-            <button id="clearbtn">Clear</button>
-            <br><br><textarea id="outputField" readonly="true" style="width:300px; height:150px; resize: none;"></textarea>
+        <div class="center-content">
+            <textarea class="text-field" id="inputField" style="width:300px; height:150px; resize: none;"></textarea>
+            <br><br><button id="runbutton">Run</button>
+            <button id="clearbutton">Clear</button>
+            <br><br><textarea class="text-field" id="outputField" readonly="true" style="width:300px; height:150px; resize: none;"></textarea>
         </div>
     </div>
     

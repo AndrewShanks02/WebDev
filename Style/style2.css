@@ -2,15 +2,32 @@ body {
     background-color: beige;
     text-align: center;
 }
-/*#container {
+/* #container {
     display: flex;
     margin-left:-5px;
     margin-right:-5px;
 }
 .boxes {
-    flex: 50%;
+    flex: 0.5;
     padding: 5px;
-}*/
+} */
+table {
+    float: left;
+    width: 15%;
+    margin-right: 0px;
+    border: 1px solid #ccc;
+}
+.center-content {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* CSS for textfields */
+.text-field {
+    display: inline;
+    margin-bottom: 10px;
+}
+
 h2 {
     color: rgb(255, 0, 0);
 }
