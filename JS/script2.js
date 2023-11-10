@@ -73,6 +73,10 @@ function parseInput(s)
                 readLit = true;
                 operation = (f) => {return stack.pop() % f;}
                 break;
+            case '^':
+                readLit = true;
+                operation = (f) => {return Math.pow(stack.pop(), f);}
+                break;
             case ';':
                 if (readLit)
                 {
