@@ -5,7 +5,7 @@ let operation;
 
 function output(s)
 {
-    $("#outputField").text($("#outputField").val() + s);
+    $("#outputField").text($("#outputField").val() + s + "\n");
 }
 function reset()
 {
