@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page 2</title>
+    <title>Page 2 - the Calculator...</title>
     <link rel="stylesheet" href="../Style/style2.css"></link>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-    <h2>A Really Stupid Calculator</h2>
-    <p>A calculator too high effort too ever be useful</p>
-    <p>You must push binary literals to the stack and use operators on them</p>
+    <h2><u>A Really Stupid Calculator</u></h2>
+    <p><i>A calculator too high effort too ever be useful</i></p>
+    <p>You must push <strong>only</strong> binary literals to the stack and use the operators at the side</p>
     <div id="container">
         <div>
             <table>
@@ -28,10 +28,12 @@
         </div>
 
         <div class="center-content">
-            <textarea class="text-field" id="inputField" style="width:300px; height:150px; resize: none;"></textarea>
-            <br><br><button id="runbutton">Run</button>
+            <textarea class="text-field" id="inputField"></textarea>
+            <br><br>
+            <button id="runbutton">Run</button>
             <button id="clearbutton">Clear</button>
-            <br><br><textarea class="text-field" id="outputField" readonly="true" style="width:300px; height:150px; resize: none;"></textarea>
+            <br><br>
+            <textarea class="text-field" id="outputField" readonly="true"></textarea>
         </div>
     </div>
     
