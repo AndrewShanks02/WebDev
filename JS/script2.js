@@ -9,6 +9,7 @@ function output(s)
 }
 function reset()
 {
+    readLit = false;
     $("#outputField").text("");
 }
 function fetchInput()
@@ -98,5 +99,5 @@ $("#runbutton").click((e) => {
 
 $("#clearbutton").click((e) => {
     $("#inputField").val("")
-    $("#outputField").text("");
+    reset();
 });
